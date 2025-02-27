@@ -9,6 +9,5 @@ public class Test {
             System.out.println("value of x is "+x);
             x+=1;
         }
-        System.out.println(x);
     }
 }
