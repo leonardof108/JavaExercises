@@ -1,14 +1,10 @@
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        char char1 = 1, char2 = 2;
+        short short1 = 1, short2 = 2;
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Hello, World!");
-        System.out.print("type something: ");
-        String message = scanner.nextLine();
-        System.out.printf("you typed %s", message);
+        short1 = short1 + short2;
 
     }
 }
