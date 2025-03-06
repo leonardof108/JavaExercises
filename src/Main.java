@@ -1,11 +1,16 @@
 
 public class Main {
     public static void main(String[] args) {
-        if (args.length != 2) {
-            System.err.println("usage: myapp <arg1> <arg2>");
-            System.exit(1);
+
+
+        try {
+            int[] numbers = {1, 2, 3};
+            System.out.println(numbers[5]); // throws exception
+        } catch (ArrayIndexOutOfBoundsException | NullPointerException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+            // Exception caught: Index 5 out of bounds for length 3
         }
-// Run the application
-        System.out.println("It worked: " + args[0] + ", " + args[1]);
+
+
     }
 }
